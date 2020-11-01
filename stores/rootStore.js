@@ -1,7 +1,8 @@
-import {TodoStore} from './todoStore';
+// import {connectReduxDevtools} from 'mst-middlewares';
 
-class RootStore {
-  todoStore = new TodoStore();
-}
+import TodoStore from './todoStore';
 
-export const rootStore = new RootStore();
+const store = TodoStore.create();
+// connectReduxDevtools(require('remotedev'), store);
+
+export default store;
