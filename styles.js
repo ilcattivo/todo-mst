@@ -3,13 +3,29 @@ import {StyleSheet} from 'react-native';
 export const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
-    justifyContent: 'center',
     alignItems: 'center',
   },
 
   wrapper: {
     marginHorizontal: 'auto',
     width: '85%',
+  },
+
+  counterWrapper: {
+    paddingTop: 20,
+  },
+
+  counterButtonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  },
+
+  counterButtonWrapper: {
+    flexBasis: '30%',
+  },
+
+  todosWrapper: {
+    marginTop: 50,
   },
 
   title: {
